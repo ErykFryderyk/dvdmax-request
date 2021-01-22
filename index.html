@@ -1,13 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DVDMAX</title>
+    <title>DVDMAX Zadanie rekrutacyjne</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
-    <h1>Witam Świecie!</h1>
+    <main>
+        <h1 class="header-title">Zadanie rekrutacyjne</h1>
+        <div class="container">
+                <div class="add-item-box">
+                    <button class="btn add-item">Dodaj</button>
+                    <button id="remove-item" class="btn">Usuń</button>
+                </div>
+            <div class="wrapper">
+                <h3 class="wrapper__title">Nośnik:</h3>
+                <ul id="list-1" class="wrapper__list">
+                    <li class="wrapper__item">blu-ray 4k</li>
+                    <li class="wrapper__item">Delikatesy</li>
+                    <li class="wrapper__item">Etui</li>
+                    <li class="wrapper__item">Folia/szkło ochronne</li>
+                    <li class="wrapper__item">Kabel</li>
+                    <li class="wrapper__item">Ładowarka</li>
+                    <li class="wrapper__item">MP3</li>
+                    <li class="wrapper__item">CD</li>
+                    <li class="wrapper__item">DVD</li>
+                    <li class="wrapper__item">Blu-ray</li>
+                    <li class="wrapper__item">Książka</li>
+                    <li class="wrapper__item">SACD</li>
+                    <li class="wrapper__item">Winyl</li>
+                    <li class="wrapper__item">Karty</li>
+                    <li class="wrapper__item">Puzzle</li>
+                    <li class="wrapper__item">Zabawka</li>
+                    <li class="wrapper__item">Akcesoria biurowe</li>
+                    <li class="wrapper__item">CD (audio book)</li>
+                    <li class="wrapper__item">Divx</li>
+                    <li class="wrapper__item">DVHD</li>
+                    <li class="wrapper__item">Figurka</li>
+                    <li class="wrapper__item">Gadżet</li>
+                    <li class="wrapper__item">Gra NDS</li>
+                    <li class="wrapper__item">Gra PC</li>
+                    <li class="wrapper__item">Gra planszowa</li>
+                    <li class="wrapper__item">Gra PS2</li>
+                    <li class="wrapper__item">Gra PS3</li>
+                    <li class="wrapper__item">Gra PS4</li>
+                    <li class="wrapper__item">Gra PSP</li>
+                </ul>
+            </div>
+            <div class="wrapper">
+                <h3 class="wrapper__title">Polska wersja językowa:</h3>
+                <ul id="list-2" class="wrapper__list">
+                    <li class="wrapper__item">Brak polskiej wersji</li>
+                    <li class="wrapper__item">dubbing</li>
+                    <li class="wrapper__item">lektor</li>
+                    <li class="wrapper__item">napisy</li>
+                    <li class="wrapper__item">polska instruckja</li>
+                    <li class="wrapper__item">polska produkcja</li>
+                </ul>
+            </div>
+            <div class="wrapper">
+                <h3 class="wrapper__title">Region DVD:</h3>
+                <ul id="list-3" class="wrapper__list">
+                    <li class="wrapper__item">1</li>
+                    <li class="wrapper__item">2</li>
+                    <li class="wrapper__item">3</li>
+                    <li class="wrapper__item">4</li>
+                    <li class="wrapper__item">5</li>
+                    <li class="wrapper__item">6</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal modal--overlay">
+        <div class="modal__box">
+            <div class="close-box">
+                <button id="btn-close-modal" class="btn">Zamknij</button>
+            </div>
+            <select name="" id="select-element">
+                <option value="list-1">Nośniki</option>
+                <option value="list-2">Polska wersja językowa</option>
+                <option value="list-3">Region DVD</option>
+            </select>
+            <input id="input" type="text" placeholder="">
+            <button id="add-value-btn" class="btn">Dodaj</button>
+        </div>
+    </div>
     
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
+
